@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
-    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-    <link rel="stylesheet" type="text/css" href="ultras/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- script
+<head>
+  <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+  <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
     ================================================== -->
     <script src="js/modernizr.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+
   </head>
   <body>
 
@@ -32,7 +40,8 @@
     <div class="search-popup">
       <div class="search-popup-container">
 
-        <form role="search" method="get" class="search-form" action="">
+        <form role="search" method="get" class="search-form" action="shop.html">
+
           <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
           <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
         </form>
@@ -117,14 +126,16 @@
                 <div class="navbar">
 
                   <div id="main-nav" class="stellarnav d-flex justify-content-end right">
-                    <ul class="menu-list">
+                  <ul class="menu-list">
+  <li><a href="index.html" class="item-anchor active">Home</a></li>
+  <li><a href="about.html" class="item-anchor">About</a></li>
+  <li><a href="shop.html" class="item-anchor">Shop</a></li>
+  <li><a href="blog.html" class="item-anchor">Blog</a></li>
+  <li><a href="contact.html" class="item-anchor">Contact</a></li>
+  <li><a href="styles.html" class="item-anchor">Styles</a></li>
+  <li><a href="thank-you.html" class="item-anchor">Thankyou</a></li>
+</ul>
 
-                      <li class="menu-item has-sub">
-                        <a href="index.html" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
-                          <li><a href="index.html" class="item-anchor active">Home</a></li>
-                          <li><a href="home2.html" class="item-anchor">Home v2<span class="text-primary"> (PRO)</span></a></li>
-                        </ul>
                       </li>
 
                       <li><a href="about.html" class="item-anchor" data-effect="About">About</a></li>
@@ -1899,3 +1910,4 @@
   </body>
 
 </html>
+
