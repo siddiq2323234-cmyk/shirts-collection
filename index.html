@@ -1,322 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
- 
-  <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
+
+<head>
   <meta charset="utf-8">
+  <title>Ultras – Fashion Store</title>
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <!-- CSS FILES (FIXED PATHS) -->
+  <!-- CSS FILES -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="icomoon/icomoon.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="icomoon/icomoon.css">
 
   <!-- GOOGLE FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- JS -->
+  <!-- MODERNIZR -->
   <script src="js/modernizr.js"></script>
 </head>
 
- 
-  <body>
+<body>
 
-    <!-- Preloader -->
-    <div class="preloader-wrapper">
-      <div class="preloader"></div>
+<!-- SEARCH POPUP -->
+<div class="search-popup">
+  <div class="search-popup-container">
+    <form class="search-form">
+      <input type="search" placeholder="Type and press enter">
+    </form>
+
+    <h5>Browse Categories</h5>
+    <ul>
+      <li><a href="shop.html">Men Jackets</a></li>
+      <li><a href="shop.html">Fashion</a></li>
+      <li><a href="shop.html">Casual Wears</a></li>
+      <li><a href="shop.html">Women</a></li>
+      <li><a href="shop.html">Trending</a></li>
+      <li><a href="shop.html">Hoodie</a></li>
+      <li><a href="shop.html">Kids</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/main-logo.png" alt="Ultras Logo">
+      </a>
     </div>
 
-    <!-- Search Popup -->
-    <div class="search-popup">
-      <div class="search-popup-container">
-        <form role="search" method="get" class="search-form" action="">
-          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
-          <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
-        </form>
-        <h5 class="cat-list-title">Browse Categories</h5>
-        <ul class="cat-list">
-          <li class="cat-list-item"><a href="shop.html" title="Men Jackets">Men Jackets</a></li>
-          <li class="cat-list-item"><a href="shop.html" title="Fashion">Fashion</a></li>
-          <li class="cat-list-item"><a href="shop.html" title="Casual Wears">Casual Wears</a></li>
-          <li class="cat-list-item"><a href="shop.html" title="Women">Women</a></li>
-          <li class="cat-list-item"><a href="shop.html" title="Trending">Trending</a></li>
-          <li class="cat-list-item"><a href="shop.html" title="Hoodie">Hoodie</a></li>
-          <li class="cat-list-item"><a href="shop.html" title="Kids">Kids</a></li>
+    <nav class="main-menu">
+      <ul class="menu-list d-flex list-unstyled">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Summer Collection</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="shop.html" class="btn btn-dark">Shop it now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="padding-large">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Featured Products</h2>
+    </div>
+
+    <div class="row d-flex flex-wrap">
+      <div class="col-md-3 product-item text-center">
+        <img src="images/selling-products1.jpg" alt="">
+        <h4>White Hoodie</h4>
+        <span>$40.00</span>
+      </div>
+
+      <div class="col-md-3 product-item text-center">
+        <img src="images/selling-products2.jpg" alt="">
+        <h4>Navy Blue Hoodie</h4>
+        <span>$45.00</span>
+      </div>
+
+      <div class="col-md-3 product-item text-center">
+        <img src="images/selling-products3.jpg" alt="">
+        <h4>Dark Green Hoodie</h4>
+        <span>$35.00</span>
+      </div>
+
+      <div class="col-md-3 product-item text-center">
+        <img src="images/selling-products4.jpg" alt="">
+        <h4>Silk White Shirt</h4>
+        <span>$35.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section class="padding-large bg-light-grey">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Our Journal</h2>
+    </div>
+
+    <div class="row d-flex flex-wrap">
+      <article class="col-md-4 post-item">
+        <img src="images/post-img1.jpg" alt="">
+        <h3>Top 10 casual look ideas</h3>
+        <span>Aug 22, 2021</span>
+      </article>
+
+      <article class="col-md-4 post-item">
+        <img src="images/post-img2.jpg" alt="">
+        <h3>Latest street wear trends</h3>
+        <span>Aug 25, 2021</span>
+      </article>
+
+      <article class="col-md-4 post-item">
+        <img src="images/post-img3.jpg" alt="">
+        <h3>Comfortable clothes for women</h3>
+        <span>Aug 28, 2021</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="padding-large">
+  <div class="container text-center">
+    <h2>Follow our Instagram</h2>
+    <p>@ultras / #ultras_clothing</p>
+
+    <div class="row d-flex flex-wrap">
+      <div class="col-md-2"><img src="images/insta-image1.jpg" alt=""></div>
+      <div class="col-md-2"><img src="images/insta-image2.jpg" alt=""></div>
+      <div class="col-md-2"><img src="images/insta-image3.jpg" alt=""></div>
+      <div class="col-md-2"><img src="images/insta-image4.jpg" alt=""></div>
+      <div class="col-md-2"><img src="images/insta-image5.jpg" alt=""></div>
+      <div class="col-md-2"><img src="images/insta-image6.jpg" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="row d-flex flex-wrap">
+
+      <div class="col-md-3">
+        <h5>Ultras</h5>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="blog.html">Our Journals</a></li>
+          <li><a href="#">Careers</a></li>
         </ul>
       </div>
+
+      <div class="col-md-3">
+        <h5>Customer Service</h5>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h5>Contact Us</h5>
+        <p>ourservices@ultras.com</p>
+        <p><strong>+57 444 11 00 35</strong></p>
+      </div>
+
+      <div class="col-md-3">
+        <h5>Follow</h5>
+        <i class="icon icon-facebook"></i>
+        <i class="icon icon-twitter"></i>
+        <i class="icon icon-instagram"></i>
+      </div>
+
     </div>
+  </div>
+</footer>
 
-    <!-- Header -->
-    <header id="header">
-      <div id="header-wrap">
-        <nav class="secondary-nav border-bottom">
-          <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-4 header-contact">
-                <p>Let's talk! <strong>+57 444 11 00 35</strong></p>
-              </div>
-              <div class="col-md-4 shipping-purchase text-center">
-                <p>Free shipping on a purchase value of $200</p>
-              </div>
-              <div class="col-md-4 col-sm-12 user-items">
-                <ul class="d-flex justify-content-end list-unstyled">
-                  <li><a href="login.html"><i class="icon icon-user"></i></a></li>
-                  <li><a href="cart.html"><i class="icon icon-shopping-cart"></i></a></li>
-                  <li><a href="wishlist.html"><i class="icon icon-heart"></i></a></li>
-                  <li class="user-items search-item pe-3"><a href="#" class="search-button"><i class="icon icon-search"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
+<!-- JS FILES -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
 
-    <!-- Products Section (Sample Tabs) -->
-    <section id="products" class="product-store padding-large">
-      <div class="container">
-        <div class="tabs">
-          <ul class="tab-links d-flex justify-content-start list-unstyled">
-            <li class="active" data-tab="hoodie">Hoodies</li>
-            <li data-tab="outer">Outerwear</li>
-            <li data-tab="jackets">Jackets</li>
-            <li data-tab="accessories">Accessories</li>
-          </ul>
-
-          <div class="tab-content">
-            <!-- Hoodie Tab -->
-            <div id="hoodie" data-tab-content class="active">
-              <div class="row d-flex flex-wrap">
-                <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                  <div class="image-holder">
-                    <img src="images/selling-products17.jpg" alt="White Hoodie" class="product-image">
-                  </div>
-                  <div class="cart-concern">
-                    <div class="cart-button d-flex justify-content-between align-items-center">
-                      <button type="button" class="btn-wrap cart-link d-flex align-items-center">Add to Cart <i class="icon icon-arrow-io"></i></button>
-                      <button type="button" class="view-btn tooltip d-flex"><i class="icon icon-screen-full"></i><span class="tooltip-text">Quick view</span></button>
-                      <button type="button" class="wishlist-btn"><i class="icon icon-heart"></i></button>
-                    </div>
-                  </div>
-                  <div class="product-detail">
-                    <h3 class="product-title"><a href="single-product.html">White Hoodie</a></h3>
-                    <div class="item-price text-primary">$40.00</div>
-                  </div>
-                </div>
-
-                <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                  <div class="image-holder">
-                    <img src="images/selling-products4.jpg" alt="Navy Blue Hoodie" class="product-image">
-                  </div>
-                  <div class="cart-concern">
-                    <div class="cart-button d-flex justify-content-between align-items-center">
-                      <button type="button" class="btn-wrap cart-link d-flex align-items-center">Add to Cart <i class="icon icon-arrow-io"></i></button>
-                      <button type="button" class="view-btn tooltip d-flex"><i class="icon icon-screen-full"></i><span class="tooltip-text">Quick view</span></button>
-                      <button type="button" class="wishlist-btn"><i class="icon icon-heart"></i></button>
-                    </div>
-                  </div>
-                  <div class="product-detail">
-                    <h3 class="product-title"><a href="single-product.html">Navy Blue Hoodie</a></h3>
-                    <div class="item-price text-primary">$45.00</div>
-                  </div>
-                </div>
-
-                <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                  <div class="image-holder">
-                    <img src="images/selling-products18.jpg" alt="Dark Green Hoodie" class="product-image">
-                  </div>
-                  <div class="cart-concern">
-                    <div class="cart-button d-flex justify-content-between align-items-center">
-                      <button type="button" class="btn-wrap cart-link d-flex align-items-center">Add to Cart <i class="icon icon-arrow-io"></i></button>
-                      <button type="button" class="view-btn tooltip d-flex"><i class="icon icon-screen-full"></i><span class="tooltip-text">Quick view</span></button>
-                      <button type="button" class="wishlist-btn"><i class="icon icon-heart"></i></button>
-                    </div>
-                  </div>
-                  <div class="product-detail">
-                    <h3 class="product-title"><a href="single-product.html">Dark Green Hoodie</a></h3>
-                    <div class="item-price text-primary">$35.00</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Outerwear Tab -->
-            <div id="outer" data-tab-content>
-              <div class="row d-flex flex-wrap">
-                <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                  <div class="image-holder">
-                    <img src="images/selling-products3.jpg" alt="Silk White Shirt" class="product-image">
-                  </div>
-                  <div class="cart-concern">
-                    <div class="cart-button d-flex justify-content-between align-items-center">
-                      <button type="button" class="btn-wrap cart-link d-flex align-items-center">Add to Cart <i class="icon icon-arrow-io"></i></button>
-                      <button type="button" class="view-btn tooltip d-flex"><i class="icon icon-screen-full"></i><span class="tooltip-text">Quick view</span></button>
-                      <button type="button" class="wishlist-btn"><i class="icon icon-heart"></i></button>
-                    </div>
-                  </div>
-                  <div class="product-detail">
-                    <h3 class="product-title"><a href="single-product.html">Silk White Shirt</a></h3>
-                    <div class="item-price text-primary">$35.00</div>
-                  </div>
-                </div>
-                <!-- More Outerwear products here as in your previous snippet -->
-              </div>
-            </div>
-
-            <!-- Jackets Tab -->
-            <div id="jackets" data-tab-content>
-              <!-- Jackets products here as in your previous snippet -->
-            </div>
-
-            <!-- Accessories Tab -->
-            <div id="accessories" data-tab-content>
-              <!-- Accessories products here as in your previous snippet -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="padding-large no-padding-bottom">
-      <div class="container">
-        <div class="reviews-content">
-          <div class="row d-flex flex-wrap">
-            <div class="col-md-2"><div class="review-icon"><i class="icon icon-right-quote"></i></div></div>
-            <div class="col-md-8">
-              <div class="swiper testimonial-swiper overflow-hidden">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonial-detail">
-                      <p>“Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.”</p>
-                      <div class="author-detail"><div class="name">By Maggie Rio</div></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="testimonial-detail">
-                      <p>“Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.”</p>
-                      <div class="author-detail"><div class="name">By John Smith</div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-arrows">
-                <button class="prev-button"><i class="icon icon-arrow-left"></i></button>
-                <button class="next-button"><i class="icon icon-arrow-right"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="latest-blog" class="padding-large">
-      <div class="container">
-        <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
-          <h2 class="section-title">Our Journal</h2>
-          <div class="btn-wrap align-right">
-            <a href="blog.html" class="d-flex align-items-center">Read All Articles <i class="icon icon-arrow-io"></i></a>
-          </div>
-        </div>
-        <div class="row d-flex flex-wrap">
-          <article class="col-md-4 post-item">
-            <div class="image-holder zoom-effect">
-              <a href="single-post.html">
-                <img src="images/post-img1.jpg" alt="Top 10 casual look ideas" class="post-image">
-              </a>
-            </div>
-            <div class="post-content d-flex">
-              <div class="meta-date">
-                <div class="meta-day text-primary">22</div>
-                <div class="meta-month">Aug-2021</div>
-              </div>
-              <div class="post-header">
-                <h3 class="post-title"><a href="single-post.html">Top 10 casual look ideas to dress up your kids</a></h3>
-                <a href="blog.html" class="blog-categories">Fashion</a>
-              </div>
-            </div>
-          </article>
-          <article class="col-md-4 post-item">
-            <div class="image-holder zoom-effect">
-              <a href="single-post.html">
-                <img src="images/post-img2.jpg" alt="Latest street wear trends" class="post-image">
-              </a>
-            </div>
-            <div class="post-content d-flex">
-              <div class="meta-date">
-                <div class="meta-day text-primary">25</div>
-                <div class="meta-month">Aug-2021</div>
-              </div>
-              <div class="post-header">
-                <h3 class="post-title"><a href="single-post.html">Latest trends of wearing street wears supremely</a></h3>
-                <a href="blog.html" class="blog-categories">Trending</a>
-              </div>
-            </div>
-          </article>
-          <article class="col-md-4 post-item">
-            <div class="image-holder zoom-effect">
-              <a href="single-post.html">
-                <img src="images/post-img3.jpg" alt="Comfortable clothes for women" class="post-image">
-              </a>
-            </div>
-            <div class="post-content d-flex">
-              <div class="meta-date">
-                <div class="meta-day text-primary">28</div>
-                <div class="meta-month">Aug-2021</div>
-              </div>
-              <div class="post-header">
-                <h3 class="post-title"><a href="single-post.html">Types of comfortable clothes ideas for women</a></h3>
-                <a href="blog.html" class="blog-categories">Inspiration</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Brand Section -->
-    <section id="brand-collection" class="padding-medium bg-light-grey">
-      <div class="container">
-        <div class="d-flex flex-wrap justify-content-between">
-          <img src="images/brand1.png" alt="Brand 1" class="brand-image">
-          <img src="images/brand2.png" alt="Brand 2" class="brand-image">
-          <img src="images/brand3.png" alt="Brand 3" class="brand-image">
-          <img src="images/brand4.png" alt="Brand 4" class="brand-image">
-          <img src="images/brand5.png" alt="Brand 5" class="brand-image">
-        </div>
-      </div>
-    </section>
-
-    <!-- Instagram Section -->
-    <section id="instagram" class="padding-large">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Follow our Instagram</h2>
-        </div>
-        <p>Our official Instagram account <a href="#">@ultras</a> or <a href="#">#ultras_clothing</a></p>
-        <div class="row d-flex flex-wrap justify-content-between">
-          <div class="col-lg-2 col-md-4 col-sm-6"><figure class="zoom-effect"><img src="images/insta-image1.jpg" alt="Instagram post 1" class="insta-image"><i class="icon icon-instagram"></i></figure></div>
-          <div class="col-lg-2 col-md-4 col-sm-6"><figure class="zoom-effect"><img src="images/insta-image2.jpg" alt="Instagram post 2" class="insta-image"><i class="icon icon-instagram"></i></figure></div>
-          <div class="col-lg-2 col-md-4 col-sm-6"><figure class="zoom-effect"><img src="images/insta-image3.jpg" alt="Instagram post 3" class="insta-image"><i class="icon icon-instagram"></i></figure></div>
-          <div class="col-lg-2 col-md-4 col-sm-6"><figure class="zoom-effect"><img src="images/insta-image4.jpg" alt="Instagram post 4" class="insta-image"><i class="icon icon-instagram"></i></figure></div>
-          <div class="col-lg-2 col-md-4 col-sm-6"><figure class="zoom-effect"><img src="images/insta-image5.jpg" alt="Instagram post 5" class="insta-image"><i class="icon icon-instagram"></i></figure></div>
-          <div class="col-lg-2 col-md-4 col-sm-6"><figure class="zoom-effect"><img src="images/insta-image6.jpg" alt="Instagram post 6" class="insta-image"><i class="icon icon-instagram"></i></figure></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Shipping Information -->
-    <section id="shipping-information">
-      <hr>
-      <div class="container">
-        <div class="row d-flex flex-wrap align-items-center justify-content-between">
-          <div class="col-md-3
-
+</body>
+</html>
