@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <title>Ultras - Clothing Store</title>
   <meta charset="utf-8">
-  <title>Ultras – Fashion Store</title>
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
 
-  <!-- CSS FILES -->
+  <!-- CSS FILES (CORRECT PATHS) -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="icomoon/icomoon.css">
 
-  <!-- GOOGLE FONT -->
+  <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- MODERNIZR -->
@@ -23,11 +20,17 @@
 
 <body>
 
+<!-- PRELOADER -->
+<div class="preloader-wrapper">
+  <div class="preloader"></div>
+</div>
+
 <!-- SEARCH POPUP -->
 <div class="search-popup">
   <div class="search-popup-container">
     <form class="search-form">
-      <input type="search" placeholder="Type and press enter">
+      <input type="search" class="search-field" placeholder="Type and press enter">
+      <button type="submit"><i class="icon icon-search"></i></button>
     </form>
 
     <h5>Browse Categories</h5>
@@ -45,158 +48,146 @@
 
 <!-- HEADER -->
 <header id="header">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/main-logo.png" alt="Ultras Logo">
-      </a>
+  <nav class="secondary-nav border-bottom">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-4">
+          <p>Let's talk! <strong>+57 444 11 00 35</strong></p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p>Free shipping on a purchase value of $200</p>
+        </div>
+        <div class="col-md-4">
+          <ul class="d-flex justify-content-end list-unstyled">
+            <li><a href="#"><i class="icon icon-user"></i></a></li>
+            <li><a href="#"><i class="icon icon-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="icon icon-heart"></i></a></li>
+            <li><a href="#" class="search-button"><i class="icon icon-search"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <nav class="main-menu">
-      <ul class="menu-list d-flex list-unstyled">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  </nav>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero-section">
+<!-- PRODUCTS -->
+<section id="products" class="product-store padding-large">
   <div class="container">
-    <div class="hero-content">
-      <h1>Summer Collection</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <a href="shop.html" class="btn btn-dark">Shop it now</a>
+
+    <ul class="tab-links list-unstyled d-flex">
+      <li class="active" data-tab="hoodie">Hoodies</li>
+      <li data-tab="outer">Outerwear</li>
+      <li data-tab="jackets">Jackets</li>
+      <li data-tab="accessories">Accessories</li>
+    </ul>
+
+    <div class="tab-content">
+
+      <!-- HOODIES -->
+      <div id="hoodie" class="active">
+        <div class="row">
+
+          <div class="col-md-4 product-item">
+            <img src="images/selling-products17.jpg" alt="">
+            <h3>White Hoodie</h3>
+            <span>$40.00</span>
+          </div>
+
+          <div class="col-md-4 product-item">
+            <img src="images/selling-products4.jpg" alt="">
+            <h3>Navy Blue Hoodie</h3>
+            <span>$45.00</span>
+          </div>
+
+          <div class="col-md-4 product-item">
+            <img src="images/selling-products18.jpg" alt="">
+            <h3>Dark Green Hoodie</h3>
+            <span>$35.00</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- OUTERWEAR -->
+      <div id="outer">
+        <div class="row">
+          <div class="col-md-4 product-item">
+            <img src="images/selling-products3.jpg" alt="">
+            <h3>Silk White Shirt</h3>
+            <span>$35.00</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- FEATURED PRODUCTS -->
+<!-- TESTIMONIALS -->
+<section class="padding-large">
+  <div class="container text-center">
+    <p>“Dignissim massa diam elementum habitant fames.”</p>
+    <strong>By Maggie Rio</strong>
+  </div>
+</section>
+
+<!-- BLOG -->
 <section class="padding-large">
   <div class="container">
-    <div class="section-header text-center">
-      <h2>Featured Products</h2>
-    </div>
+    <h2>Our Journal</h2>
+    <div class="row">
 
-    <div class="row d-flex flex-wrap">
-      <div class="col-md-3 product-item text-center">
-        <img src="images/selling-products1.jpg" alt="">
-        <h4>White Hoodie</h4>
-        <span>$40.00</span>
+      <div class="col-md-4">
+        <img src="images/post-img1.jpg" alt="">
+        <h3>Top 10 casual look ideas</h3>
       </div>
 
-      <div class="col-md-3 product-item text-center">
-        <img src="images/selling-products2.jpg" alt="">
-        <h4>Navy Blue Hoodie</h4>
-        <span>$45.00</span>
+      <div class="col-md-4">
+        <img src="images/post-img2.jpg" alt="">
+        <h3>Latest street wear trends</h3>
       </div>
 
-      <div class="col-md-3 product-item text-center">
-        <img src="images/selling-products3.jpg" alt="">
-        <h4>Dark Green Hoodie</h4>
-        <span>$35.00</span>
+      <div class="col-md-4">
+        <img src="images/post-img3.jpg" alt="">
+        <h3>Comfortable clothes for women</h3>
       </div>
 
-      <div class="col-md-3 product-item text-center">
-        <img src="images/selling-products4.jpg" alt="">
-        <h4>Silk White Shirt</h4>
-        <span>$35.00</span>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- BLOG SECTION -->
-<section class="padding-large bg-light-grey">
-  <div class="container">
-    <div class="section-header text-center">
-      <h2>Our Journal</h2>
-    </div>
-
-    <div class="row d-flex flex-wrap">
-      <article class="col-md-4 post-item">
-        <img src="images/post-img1.jpg" alt="">
-        <h3>Top 10 casual look ideas</h3>
-        <span>Aug 22, 2021</span>
-      </article>
-
-      <article class="col-md-4 post-item">
-        <img src="images/post-img2.jpg" alt="">
-        <h3>Latest street wear trends</h3>
-        <span>Aug 25, 2021</span>
-      </article>
-
-      <article class="col-md-4 post-item">
-        <img src="images/post-img3.jpg" alt="">
-        <h3>Comfortable clothes for women</h3>
-        <span>Aug 28, 2021</span>
-      </article>
-    </div>
+<!-- BRANDS -->
+<section class="padding-medium bg-light-grey">
+  <div class="container d-flex justify-content-between">
+    <img src="images/brand1.png" alt="">
+    <img src="images/brand2.png" alt="">
+    <img src="images/brand3.png" alt="">
+    <img src="images/brand4.png" alt="">
+    <img src="images/brand5.png" alt="">
   </div>
 </section>
 
 <!-- INSTAGRAM -->
-<section class="padding-large">
-  <div class="container text-center">
-    <h2>Follow our Instagram</h2>
-    <p>@ultras / #ultras_clothing</p>
-
-    <div class="row d-flex flex-wrap">
-      <div class="col-md-2"><img src="images/insta-image1.jpg" alt=""></div>
-      <div class="col-md-2"><img src="images/insta-image2.jpg" alt=""></div>
-      <div class="col-md-2"><img src="images/insta-image3.jpg" alt=""></div>
-      <div class="col-md-2"><img src="images/insta-image4.jpg" alt=""></div>
-      <div class="col-md-2"><img src="images/insta-image5.jpg" alt=""></div>
-      <div class="col-md-2"><img src="images/insta-image6.jpg" alt=""></div>
-    </div>
+<section class="padding-large text-center">
+  <h2>Follow our Instagram</h2>
+  <div class="container d-flex flex-wrap">
+    <img src="images/insta-image1.jpg" alt="">
+    <img src="images/insta-image2.jpg" alt="">
+    <img src="images/insta-image3.jpg" alt="">
+    <img src="images/insta-image4.jpg" alt="">
+    <img src="images/insta-image5.jpg" alt="">
+    <img src="images/insta-image6.jpg" alt="">
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer id="footer">
-  <div class="container">
-    <div class="row d-flex flex-wrap">
-
-      <div class="col-md-3">
-        <h5>Ultras</h5>
-        <ul>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="blog.html">Our Journals</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-3">
-        <h5>Customer Service</h5>
-        <ul>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-3">
-        <h5>Contact Us</h5>
-        <p>ourservices@ultras.com</p>
-        <p><strong>+57 444 11 00 35</strong></p>
-      </div>
-
-      <div class="col-md-3">
-        <h5>Follow</h5>
-        <i class="icon icon-facebook"></i>
-        <i class="icon icon-twitter"></i>
-        <i class="icon icon-instagram"></i>
-      </div>
-
-    </div>
+<footer class="padding-large bg-dark text-white">
+  <div class="container text-center">
+    <p>© Ultras Clothing Store</p>
   </div>
 </footer>
 
-<!-- JS FILES -->
+<!-- JS FILES (REQUIRED) -->
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
